@@ -1,0 +1,7 @@
+{% extends 'oas/blog_list.html' %}
+{% block title %}{{ ErrSysTypes.type_name }}{% endblock %}
+
+{% block blog_list_title %}
+    日期归档：{{ article_with_date }}
+    <a href="{% url 'article_list' %}">查看全部故障</a>
+{% endblock %}
